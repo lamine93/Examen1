@@ -1,0 +1,24 @@
+#include "carre1.hpp"
+#include <iostream>
+
+
+
+int main()
+{
+  int i,j;
+  // Partie 1 de l'examen
+  
+
+
+
+  Carre Cd0;
+  
+ // std::cout << "Test Carre\n";
+ // std::cout << Cd0;
+
+
+  Carre Cd1(7);
+  std::cout << "Test Carre de taille 7\n";
+  std::cout << Cd1;
+
+}

@@ -1,0 +1,42 @@
+
+#include<iostream>
+#include<string>
+#include<vector>
+#include<algorithm>
+#include<ctime>
+using namespace std;
+class Carre{
+   
+  public:
+  int taille;
+ vector<vector<double> > tab;
+Carre() : tab(1)
+{
+ tab[0][0]=rand()/(double)RAND_MAX;
+}
+ 
+Carre(int taille)
+
+{
+for (int i=0; i<taille; i++)
+  
+   for(int j=0;j<taille; j++)
+    tab[i][j]=rand()/(double)RAND_MAX; 
+   
+  
+}
+
+
+};
+
+ostream &operator<<(ostream &out, Carre &tab)
+{
+ for(int i=1; i<tab.taille; i++){
+   for(int j=1; i<tab.taille; j++)
+     out<<tab.tab[i][j]<<" ";
+         out<<endl;
+    }
+  return out;
+    
+}
+
